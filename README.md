@@ -8,11 +8,21 @@ Customers get in touch by phone or WhatsApp; every call button is tap-to-call on
 
 ## Pages still to build
 
-The footer already lists the full site. These links point to sections of the homepage for now, or to `#` where the page doesn't exist yet:
+The homepage already links to these pages; they need creating as folders with an `index.html` so the links work and each service can rank on its own:
 
-- Service pages: boiler installation, servicing, repairs, landlord gas safety, central heating, gas cookers & fires, plumbing & bathrooms
-- Area pages: Telford, Wellington, Shifnal, Bridgnorth, Much Wenlock, Shrewsbury, all areas
-- About, FAQs, Privacy policy, Cookie policy, Terms, Sitemap
+- `services/` (all services)
+- `services/boiler-installation/`
+- `services/boiler-servicing/`
+- `services/boiler-repairs/`
+- `services/central-heating/`
+- `services/landlord-gas-safety-certificates/`
+- `services/gas-cookers-hobs-fires/`
+- `services/leak-repairs/`
+- `services/unvented-cylinders/`
+- `services/bathroom-renovations/`
+- `services/general-plumbing/`
+
+Area pages (Telford, Wellington, Shifnal, Bridgnorth, Much Wenlock, Shrewsbury), About, FAQs, Privacy policy, Cookie policy, Terms and Sitemap are listed in the footer and still point to `#` or homepage sections.
 
 ## Still to confirm with the business
 

@@ -43,6 +43,8 @@ a[href^="tel"]:hover,a[href^="https://wa.me"]:hover,.btn:hover{filter:brightness
 input:focus,textarea:focus{outline:2px solid #1FB5D8;outline-offset:1px}
 a:focus-visible,button:focus-visible{outline:2px solid #1FB5D8;outline-offset:2px}
 [hidden]{display:none!important}
+.svc-link:hover .svc-title{color:#08708A}
+.svc-link:hover .svc-chev{border-color:#98A2B3}
 </style>
 </head>
 <body>
@@ -177,58 +179,119 @@ a:focus-visible,button:focus-visible{outline:2px solid #1FB5D8;outline-offset:2p
           <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #08708A">Services</span>
           <h2 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: clamp(30px, 3.2vw, 42px); line-height: 1.15; letter-spacing: -0.02em; color: #0F1B2D">Gas, heating &amp; plumbing</h2>
         </div>
-        <p style="margin: 0; max-width: 440px; font-size: 16px; line-height: 1.65; color: #475467">For homeowners and landlords, from annual boiler services to full heating installations.</p>
+        <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px; max-width: 440px">
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #475467">For homeowners and landlords, from annual boiler services to full heating installations.</p>
+          <a href="services/" style="display: inline-flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 600; color: #08708A; text-decoration: none">View all services <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#08708A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+        </div>
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch">
-        <div style="flex: 1 1 440px; min-width: 0; background: #FFFFFF; border: 1px solid #E7E5E0; border-top: 3px solid #C85F12; border-radius: 14px; padding: 32px 32px 16px; display: flex; flex-direction: column; gap: 16px">
-          <div style="display: flex; align-items: center; gap: 14px">
-            <span style="width: 48px; height: 48px; border-radius: 12px; background: #FDF0E6; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C85F12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5.5 1-8.5z"></path></svg></span>
-            <h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 22px; color: #0F1B2D">Heating &amp; gas</h3>
+        <div style="flex: 1 1 440px; min-width: 0; background: #FFFFFF; border: 1px solid #E7E5E0; border-top: 3px solid #C85F12; border-radius: 14px; padding: 32px 32px 12px; display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px">
+            <div style="display: flex; align-items: center; gap: 14px">
+              <span style="width: 48px; height: 48px; border-radius: 12px; background: #FDF0E6; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C85F12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3-1-5.5 1-8.5z"></path></svg></span>
+              <h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 22px; color: #0F1B2D">Heating &amp; gas</h3>
+            </div>
           </div>
           <ul style="margin: 0; padding: 0; list-style: none">
-            <li style="display: flex; flex-direction: column; gap: 4px; padding: 18px 0; border-top: 1px solid #EFEDE8">
-              <span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Boiler installation</span>
-              <span style="font-size: 15px; line-height: 1.55; color: #475467">New and replacement boilers, sized for your home.</span>
+            <li style="border-top: 1px solid #EFEDE8">
+              <a href="services/boiler-installation/" class="svc-link" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; text-decoration: none">
+                <span style="display: flex; flex-direction: column; gap: 4px">
+                  <span class="svc-title" style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Boiler installation</span>
+                  <span style="font-size: 15px; line-height: 1.55; color: #475467">New and replacement boilers, sized for your home.</span>
+                </span>
+                <span class="svc-chev" style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; border: 1px solid #E4E2DC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C85F12" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+              </a>
             </li>
-            <li style="display: flex; flex-direction: column; gap: 4px; padding: 18px 0; border-top: 1px solid #EFEDE8">
-              <span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Servicing &amp; breakdowns</span>
-              <span style="font-size: 15px; line-height: 1.55; color: #475467">Annual services, and repairs when the heating or hot water stops.</span>
+            <li style="border-top: 1px solid #EFEDE8">
+              <a href="services/boiler-servicing/" class="svc-link" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; text-decoration: none">
+                <span style="display: flex; flex-direction: column; gap: 4px">
+                  <span class="svc-title" style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Boiler servicing</span>
+                  <span style="font-size: 15px; line-height: 1.55; color: #475467">Annual services to keep your boiler safe and efficient.</span>
+                </span>
+                <span class="svc-chev" style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; border: 1px solid #E4E2DC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C85F12" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+              </a>
             </li>
-            <li style="display: flex; flex-direction: column; gap: 4px; padding: 18px 0; border-top: 1px solid #EFEDE8">
-              <span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Central heating</span>
-              <span style="font-size: 15px; line-height: 1.55; color: #475467">New radiators, power flushing and smart thermostats.</span>
+            <li style="border-top: 1px solid #EFEDE8">
+              <a href="services/boiler-repairs/" class="svc-link" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; text-decoration: none">
+                <span style="display: flex; flex-direction: column; gap: 4px">
+                  <span class="svc-title" style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Boiler repairs &amp; breakdowns</span>
+                  <span style="font-size: 15px; line-height: 1.55; color: #475467">When the heating or hot water stops working.</span>
+                </span>
+                <span class="svc-chev" style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; border: 1px solid #E4E2DC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C85F12" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+              </a>
             </li>
-            <li style="display: flex; flex-direction: column; gap: 4px; padding: 18px 0; border-top: 1px solid #EFEDE8">
-              <span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Landlord gas safety</span>
-              <span style="font-size: 15px; line-height: 1.55; color: #475467">Annual checks and gas safety certificates.</span>
+            <li style="border-top: 1px solid #EFEDE8">
+              <a href="services/central-heating/" class="svc-link" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; text-decoration: none">
+                <span style="display: flex; flex-direction: column; gap: 4px">
+                  <span class="svc-title" style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Central heating</span>
+                  <span style="font-size: 15px; line-height: 1.55; color: #475467">New radiators, power flushing and smart thermostats.</span>
+                </span>
+                <span class="svc-chev" style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; border: 1px solid #E4E2DC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C85F12" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+              </a>
             </li>
-            <li style="display: flex; flex-direction: column; gap: 4px; padding: 18px 0; border-top: 1px solid #EFEDE8">
-              <span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Gas cookers, hobs &amp; fires</span>
-              <span style="font-size: 15px; line-height: 1.55; color: #475467">Safe installation and maintenance.</span>
+            <li style="border-top: 1px solid #EFEDE8">
+              <a href="services/landlord-gas-safety-certificates/" class="svc-link" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; text-decoration: none">
+                <span style="display: flex; flex-direction: column; gap: 4px">
+                  <span class="svc-title" style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Landlord gas safety certificates</span>
+                  <span style="font-size: 15px; line-height: 1.55; color: #475467">Annual gas safety checks (CP12) for landlords.</span>
+                </span>
+                <span class="svc-chev" style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; border: 1px solid #E4E2DC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C85F12" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+              </a>
+            </li>
+            <li style="border-top: 1px solid #EFEDE8">
+              <a href="services/gas-cookers-hobs-fires/" class="svc-link" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; text-decoration: none">
+                <span style="display: flex; flex-direction: column; gap: 4px">
+                  <span class="svc-title" style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Gas cookers, hobs &amp; fires</span>
+                  <span style="font-size: 15px; line-height: 1.55; color: #475467">Safe installation and maintenance.</span>
+                </span>
+                <span class="svc-chev" style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; border: 1px solid #E4E2DC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C85F12" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+              </a>
             </li>
           </ul>
         </div>
-        <div style="flex: 1 1 440px; min-width: 0; background: #FFFFFF; border: 1px solid #E7E5E0; border-top: 3px solid #08708A; border-radius: 14px; padding: 32px 32px 16px; display: flex; flex-direction: column; gap: 16px">
-          <div style="display: flex; align-items: center; gap: 14px">
-            <span style="width: 48px; height: 48px; border-radius: 12px; background: #E6F4F7; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#08708A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7s6 6.5 6 11.3a6 6 0 0 1-12 0c0-4.8 6-11.3 6-11.3z"></path></svg></span>
-            <h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 22px; color: #0F1B2D">Plumbing</h3>
+        <div style="flex: 1 1 440px; min-width: 0; background: #FFFFFF; border: 1px solid #E7E5E0; border-top: 3px solid #08708A; border-radius: 14px; padding: 32px 32px 12px; display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px">
+            <div style="display: flex; align-items: center; gap: 14px">
+              <span style="width: 48px; height: 48px; border-radius: 12px; background: #E6F4F7; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#08708A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7s6 6.5 6 11.3a6 6 0 0 1-12 0c0-4.8 6-11.3 6-11.3z"></path></svg></span>
+              <h3 style="margin: 0; font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 22px; color: #0F1B2D">Plumbing</h3>
+            </div>
           </div>
           <ul style="margin: 0; padding: 0; list-style: none">
-            <li style="display: flex; flex-direction: column; gap: 4px; padding: 18px 0; border-top: 1px solid #EFEDE8">
-              <span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Leaks &amp; burst pipes</span>
-              <span style="font-size: 15px; line-height: 1.55; color: #475467">Found, fixed and made good.</span>
+            <li style="border-top: 1px solid #EFEDE8">
+              <a href="services/leak-repairs/" class="svc-link" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; text-decoration: none">
+                <span style="display: flex; flex-direction: column; gap: 4px">
+                  <span class="svc-title" style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Leaks &amp; burst pipes</span>
+                  <span style="font-size: 15px; line-height: 1.55; color: #475467">Found, fixed and made good.</span>
+                </span>
+                <span class="svc-chev" style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; border: 1px solid #E4E2DC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#08708A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+              </a>
             </li>
-            <li style="display: flex; flex-direction: column; gap: 4px; padding: 18px 0; border-top: 1px solid #EFEDE8">
-              <span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Unvented hot water cylinders</span>
-              <span style="font-size: 15px; line-height: 1.55; color: #475467">Installation, servicing and repairs.</span>
+            <li style="border-top: 1px solid #EFEDE8">
+              <a href="services/unvented-cylinders/" class="svc-link" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; text-decoration: none">
+                <span style="display: flex; flex-direction: column; gap: 4px">
+                  <span class="svc-title" style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Unvented hot water cylinders</span>
+                  <span style="font-size: 15px; line-height: 1.55; color: #475467">Installation, servicing and repairs.</span>
+                </span>
+                <span class="svc-chev" style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; border: 1px solid #E4E2DC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#08708A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+              </a>
             </li>
-            <li style="display: flex; flex-direction: column; gap: 4px; padding: 18px 0; border-top: 1px solid #EFEDE8">
-              <span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Bathroom renovations</span>
-              <span style="font-size: 15px; line-height: 1.55; color: #475467">Full bathroom plumbing, from first fix to finish.</span>
+            <li style="border-top: 1px solid #EFEDE8">
+              <a href="services/bathroom-renovations/" class="svc-link" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; text-decoration: none">
+                <span style="display: flex; flex-direction: column; gap: 4px">
+                  <span class="svc-title" style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Bathroom renovations</span>
+                  <span style="font-size: 15px; line-height: 1.55; color: #475467">Full bathroom plumbing, from first fix to finish.</span>
+                </span>
+                <span class="svc-chev" style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; border: 1px solid #E4E2DC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#08708A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+              </a>
             </li>
-            <li style="display: flex; flex-direction: column; gap: 4px; padding: 18px 0; border-top: 1px solid #EFEDE8">
-              <span style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Taps, toilets &amp; showers</span>
-              <span style="font-size: 15px; line-height: 1.55; color: #475467">Replacements and everyday plumbing jobs.</span>
+            <li style="border-top: 1px solid #EFEDE8">
+              <a href="services/general-plumbing/" class="svc-link" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; text-decoration: none">
+                <span style="display: flex; flex-direction: column; gap: 4px">
+                  <span class="svc-title" style="font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size: 17px; color: #0F1B2D">Taps, toilets &amp; showers</span>
+                  <span style="font-size: 15px; line-height: 1.55; color: #475467">Replacements and everyday plumbing jobs.</span>
+                </span>
+                <span class="svc-chev" style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; border: 1px solid #E4E2DC; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#08708A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></span>
+              </a>
             </li>
           </ul>
         </div>
@@ -367,13 +430,15 @@ a:focus-visible,button:focus-visible{outline:2px solid #1FB5D8;outline-offset:2p
 
         <nav aria-label="Services" style="flex: 1 1 180px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
           <h2 style="margin: 0 0 4px; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #FFFFFF">Services</h2>
-          <a href="#services" style="color: #AEB9C7; text-decoration: none; font-size: 14.5px">Boiler installation</a>
-          <a href="#services" style="color: #AEB9C7; text-decoration: none; font-size: 14.5px">Boiler servicing</a>
-          <a href="#services" style="color: #AEB9C7; text-decoration: none; font-size: 14.5px">Boiler repairs</a>
-          <a href="#services" style="color: #AEB9C7; text-decoration: none; font-size: 14.5px">Landlord gas safety</a>
-          <a href="#services" style="color: #AEB9C7; text-decoration: none; font-size: 14.5px">Central heating</a>
-          <a href="#services" style="color: #AEB9C7; text-decoration: none; font-size: 14.5px">Gas cookers &amp; fires</a>
-          <a href="#services" style="color: #AEB9C7; text-decoration: none; font-size: 14.5px">Plumbing &amp; bathrooms</a>
+          <a href="services/boiler-installation/" style="color: #AEB9C7; text-decoration: none; font-size: 14.5px">Boiler installation</a>
+          <a href="services/boiler-servicing/" style="color: #AEB9C7; text-decoration: none; font-size: 14.5px">Boiler servicing</a>
+          <a href="services/boiler-repairs/" style="color: #AEB9C7; text-decoration: none; font-size: 14.5px">Boiler repairs</a>
+          <a href="services/central-heating/" style="color: #AEB9C7; text-decoration: none; font-size: 14.5px">Central heating</a>
+          <a href="services/landlord-gas-safety-certificates/" style="color: #AEB9C7; text-decoration: none; font-size: 14.5px">Landlord gas safety</a>
+          <a href="services/gas-cookers-hobs-fires/" style="color: #AEB9C7; text-decoration: none; font-size: 14.5px">Gas cookers &amp; fires</a>
+          <a href="services/bathroom-renovations/" style="color: #AEB9C7; text-decoration: none; font-size: 14.5px">Bathroom renovations</a>
+          <a href="services/general-plumbing/" style="color: #AEB9C7; text-decoration: none; font-size: 14.5px">General plumbing</a>
+          <a href="services/" style="color: #FFFFFF; text-decoration: none; font-size: 14.5px; font-weight: 600">All services →</a>
         </nav>
 
         <nav aria-label="Areas" style="flex: 1 1 160px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
